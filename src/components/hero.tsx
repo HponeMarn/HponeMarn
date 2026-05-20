@@ -86,7 +86,7 @@ const Hero: React.FC = () => {
 
               {/* Image */}
               <img
-                src="/profile.jpg" // 👉 put your image in public folder
+                src="src/assets/unnamed.jpg" // 👉 put your image in public folder
                 alt="Hpone Marn"
                 className="w-80 h-[420px] object-cover rounded-2xl shadow-2xl opacity-90 group-hover:opacity-100 transition duration-500"
               />
