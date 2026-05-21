@@ -8,11 +8,11 @@ const Hero: React.FC = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center relative overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900"
+      className="min-h-screen flex items-center relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900"
     >
-      {/* Background Glow */}
-      <div className="absolute top-20 left-20 w-72 h-72 bg-purple-500 blur-3xl opacity-20"></div>
-      <div className="absolute bottom-20 right-20 w-96 h-96 bg-indigo-500 blur-3xl opacity-20"></div>
+      {/* Subtle Background Glow */}
+      <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500 blur-3xl opacity-10"></div>
+      <div className="absolute bottom-20 right-20 w-96 h-96 bg-slate-400 blur-3xl opacity-10"></div>
 
       <div className="max-w-7xl mx-auto px-6 py-20 relative z-10">
         <div className="grid md:grid-cols-2 gap-16 items-center">
@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
             {/* Name */}
             <p
               data-aos="fade-up"
-              className="text-purple-300 mb-3 tracking-wide text-base md:text-lg"
+              className="text-slate-300 mb-3 tracking-wide text-base md:text-lg"
             >
               👋 Hi, I'm{" "}
               <span className="text-white font-semibold text-xl md:text-2xl">
@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
               className="text-5xl md:text-7xl font-bold leading-tight mb-6"
             >
               Building Real-World
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-400">
+              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
                 Business Systems
               </span>
             </h1>
@@ -47,11 +47,11 @@ const Hero: React.FC = () => {
             <p
               data-aos="fade-up"
               data-aos-delay="200"
-              className="text-gray-400 max-w-lg mb-8 leading-relaxed"
+              className="text-slate-400 max-w-lg mb-8 leading-relaxed"
             >
               Full Stack Developer specializing in
-              <span className="text-purple-300"> Spring Boot</span> and
-              <span className="text-purple-300"> React</span>, building scalable ERP systems and business workflows.
+              <span className="text-slate-200"> Spring Boot</span> and
+              <span className="text-slate-200"> React</span>, building scalable ERP systems and business workflows.
             </p>
 
             {/* Buttons */}
@@ -62,14 +62,14 @@ const Hero: React.FC = () => {
             >
               <a
                 href="#projects"
-                className="px-8 py-3 bg-gradient-to-r from-purple-500 to-indigo-600 rounded-full font-semibold hover:scale-105 transition"
+                className="px-8 py-3 bg-slate-700 hover:bg-slate-600 rounded-full font-semibold transition"
               >
                 View Work →
               </a>
 
               <button
                 onClick={handleContact}
-                className="px-8 py-3 border border-purple-400 rounded-full hover:bg-purple-500/20 transition"
+                className="px-8 py-3 border border-slate-500 rounded-full hover:bg-slate-700/40 transition"
               >
                 Contact Me
               </button>
@@ -86,7 +86,7 @@ const Hero: React.FC = () => {
 
               {/* Image */}
               <img
-                src="src/assets/unnamed.jpg" // 👉 put your image in public folder
+                src="/unnamed.jpg" // put image in public folder
                 alt="Hpone Marn"
                 className="w-80 h-[420px] object-cover rounded-2xl shadow-2xl opacity-90 group-hover:opacity-100 transition duration-500"
               />
@@ -115,9 +115,9 @@ const Hero: React.FC = () => {
           onClick={() =>
             document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })
           }
-          className="w-6 h-10 border-2 border-purple-400 rounded-full flex justify-center cursor-pointer"
+          className="w-6 h-10 border-2 border-slate-400 rounded-full flex justify-center cursor-pointer"
         >
-          <div className="w-1 h-2 bg-purple-400 rounded-full mt-2 animate-ping" />
+          <div className="w-1 h-2 bg-slate-400 rounded-full mt-2 animate-ping" />
         </div>
       </div>
 

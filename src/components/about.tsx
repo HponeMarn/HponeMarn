@@ -5,14 +5,13 @@ import 'aos/dist/aos.css';
 type Stat = {
   number: string;
   label: string;
-  color: string;
 };
 
 const STATS: Stat[] = [
-  { number: "1+", label: "Years Experience", color: "from-blue-500 to-cyan-500" },
-  { number: "4+", label: "Projects Delivered", color: "from-purple-500 to-pink-500" },
-  { number: "3", label: "Certifications", color: "from-orange-500 to-red-500" },
-  { number: "100%", label: "Commitment", color: "from-green-500 to-teal-500" },
+  { number: "1+", label: "Years Experience" },
+  { number: "4+", label: "Projects Delivered" },
+  { number: "3", label: "Certifications" },
+  { number: "100%", label: "Commitment" },
 ];
 
 const About: React.FC = () => {
@@ -25,15 +24,18 @@ const About: React.FC = () => {
   }, []);
 
   return (
-    <section id="about" className="py-24 bg-white">
+    <section
+      id="about"
+      className="py-24 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white"
+    >
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-16 items-center">
-          
-          {/* Left Content */}
+
+          {/* LEFT CONTENT */}
           <div>
             <p
               data-aos="fade-right"
-              className="text-purple-600 font-semibold mb-2 tracking-wider"
+              className="text-slate-400 font-semibold mb-2 tracking-wider"
             >
               ABOUT ME
             </p>
@@ -41,10 +43,10 @@ const About: React.FC = () => {
             <h2
               data-aos="fade-up"
               data-aos-delay="100"
-              className="text-4xl md:text-5xl font-bold text-gray-800 mb-6 leading-tight"
+              className="text-4xl md:text-5xl font-bold mb-6 leading-tight"
             >
               Turning Complex Ideas into{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-indigo-600">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
                 Simple, Scalable Solutions
               </span>
             </h2>
@@ -52,17 +54,17 @@ const About: React.FC = () => {
             <p
               data-aos="fade-up"
               data-aos-delay="200"
-              className="text-gray-600 mb-4 leading-relaxed"
+              className="text-slate-400 mb-4 leading-relaxed"
             >
               I build real-world business systems using
-              <span className="font-medium text-gray-800"> Java Spring Boot</span> and
-              <span className="font-medium text-gray-800"> React</span>, focusing on clean architecture and maintainable code.
+              <span className="text-slate-200 font-medium"> Java Spring Boot</span> and
+              <span className="text-slate-200 font-medium"> React</span>, focusing on clean architecture and maintainable code.
             </p>
 
             <p
               data-aos="fade-up"
               data-aos-delay="300"
-              className="text-gray-600 mb-4 leading-relaxed"
+              className="text-slate-400 mb-4 leading-relaxed"
             >
               At MIT Company, I developed a full-featured Gold Shop ERP system handling 
               inventory, sales, purchase, gold saving, pawn, and audit workflows.
@@ -71,7 +73,7 @@ const About: React.FC = () => {
             <p
               data-aos="fade-up"
               data-aos-delay="400"
-              className="text-gray-600 mb-6 leading-relaxed"
+              className="text-slate-400 mb-6 leading-relaxed"
             >
               I also built a clinic management system using VB.NET + SQL Server, and now 
               specialize in modern full-stack development with React + Spring Boot.
@@ -84,35 +86,33 @@ const About: React.FC = () => {
             >
               <a
                 href="#projects"
-                className="px-6 py-2 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-lg shadow hover:shadow-lg transition-all"
+                className="px-6 py-2 bg-slate-700 hover:bg-slate-600 rounded-lg transition"
               >
                 View Projects
               </a>
 
               <a
                 href="#contact"
-                className="px-6 py-2 border-2 border-purple-500 text-purple-600 rounded-lg hover:bg-purple-500 hover:text-white transition-all"
+                className="px-6 py-2 border border-slate-500 rounded-lg hover:bg-slate-700/40 transition"
               >
                 Contact Me
               </a>
             </div>
           </div>
 
-          {/* Right Stats */}
+          {/* RIGHT STATS */}
           <div className="grid grid-cols-2 gap-6">
             {STATS.map((stat, idx) => (
               <div
                 key={idx}
                 data-aos="zoom-in"
                 data-aos-delay={idx * 150}
-                className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-6 text-center hover:scale-105 hover:shadow-md transition-all duration-300"
+                className="bg-slate-800 border border-slate-700 rounded-2xl p-6 text-center hover:scale-105 hover:border-slate-500 transition-all duration-300"
               >
-                <div
-                  className={`text-4xl font-bold bg-gradient-to-r ${stat.color} bg-clip-text text-transparent mb-2`}
-                >
+                <div className="text-4xl font-bold text-blue-400 mb-2">
                   {stat.number}
                 </div>
-                <p className="text-gray-600 text-sm">{stat.label}</p>
+                <p className="text-slate-400 text-sm">{stat.label}</p>
               </div>
             ))}
           </div>

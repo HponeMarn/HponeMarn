@@ -15,9 +15,9 @@ const EDUCATIONS: EducationItem[] = [
   {
     institution: "Youth Resource College",
     degree: "Diploma in Computing",
-    period: "2025",
+    period: "2024",
   },
-   {
+  {
     institution: "Youth Resource College",
     degree: "Diploma in Business IT",
     period: "2025",
@@ -31,13 +31,16 @@ const EDUCATIONS: EducationItem[] = [
 
 const Education: React.FC = () => {
   return (
-    <section id="education" className="bg-white py-20">
+    <section
+      id="education"
+      className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-24 text-white"
+    >
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Title */}
         <h2
           data-aos="fade-up"
-          className="text-4xl font-bold text-center text-gray-800 mb-16"
+          className="text-4xl md:text-5xl font-bold text-center mb-16"
         >
           🎓 Education & Certifications
         </h2>
@@ -46,7 +49,7 @@ const Education: React.FC = () => {
         <div className="relative max-w-3xl mx-auto">
 
           {/* Vertical Line */}
-          <div className="absolute left-3 top-0 w-1 h-full bg-gradient-to-b from-indigo-500 to-purple-500"></div>
+          <div className="absolute left-3 top-0 w-[2px] h-full bg-slate-700"></div>
 
           <div className="space-y-12">
             {EDUCATIONS.map((edu, idx) => (
@@ -57,19 +60,19 @@ const Education: React.FC = () => {
                 className="relative pl-12"
               >
                 {/* Dot */}
-                <div className="absolute left-0 top-2 w-6 h-6 bg-indigo-500 rounded-full border-4 border-white shadow-md"></div>
+                <div className="absolute left-0 top-2 w-5 h-5 bg-blue-400 rounded-full border-4 border-slate-900"></div>
 
                 {/* Card */}
-                <div className="bg-gray-50 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
-                  <h3 className="text-xl font-bold text-gray-800">
+                <div className="bg-slate-800 border border-slate-700 rounded-xl p-6 hover:border-slate-500 hover:scale-[1.02] transition-all duration-300">
+                  <h3 className="text-xl font-semibold text-slate-100">
                     {edu.institution}
                   </h3>
 
-                  <p className="text-gray-700 font-medium mt-1">
+                  <p className="text-slate-300 mt-1">
                     {edu.degree}
                   </p>
 
-                  <p className="text-gray-500 text-sm mt-1">
+                  <p className="text-slate-500 text-sm mt-1">
                     {edu.period}
                   </p>
                 </div>

@@ -24,15 +24,16 @@ const Navbar: React.FC = () => {
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-500 ${
         scrolled
-          ? 'bg-white/90 backdrop-blur-md shadow-lg py-3'
+          ? 'bg-slate-900/80 backdrop-blur-md border-b border-slate-700 py-3'
           : 'bg-transparent py-5'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
+
         {/* Logo */}
         <a
           href="#home"
-          className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent"
+          className="text-2xl font-bold text-white tracking-wide"
         >
           HPN.
         </a>
@@ -43,10 +44,10 @@ const Navbar: React.FC = () => {
             <a
               key={label}
               href={href}
-              className="relative text-gray-700 font-medium transition-colors duration-300 hover:text-indigo-600 group"
+              className="relative text-slate-300 font-medium transition-colors duration-300 hover:text-blue-400 group"
             >
               {label}
-              <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-indigo-600 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
             </a>
           ))}
         </div>
@@ -54,7 +55,7 @@ const Navbar: React.FC = () => {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden text-gray-700 text-2xl"
+          className="md:hidden text-slate-300 text-2xl"
         >
           ☰
         </button>
@@ -62,13 +63,13 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Nav */}
       {menuOpen && (
-        <div className="md:hidden bg-white shadow-md px-6 py-4 space-y-4">
+        <div className="md:hidden bg-slate-900 border-t border-slate-700 px-6 py-4 space-y-4">
           {NAV_LINKS.map(({ label, href }) => (
             <a
               key={label}
               href={href}
               onClick={() => setMenuOpen(false)}
-              className="block text-gray-700 font-medium hover:text-indigo-600"
+              className="block text-slate-300 font-medium hover:text-blue-400"
             >
               {label}
             </a>

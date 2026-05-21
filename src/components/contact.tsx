@@ -23,13 +23,16 @@ const Contact: React.FC = () => {
   ];
 
   return (
-    <section id="contact" className="py-24 bg-white">
+    <section
+      id="contact"
+      className="py-24 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white"
+    >
       <div className="max-w-4xl mx-auto px-6 text-center">
 
         {/* Header */}
         <p
           data-aos="fade-up"
-          className="text-purple-600 font-semibold mb-2 tracking-wider"
+          className="text-slate-400 font-semibold mb-2 tracking-wider"
         >
           GET IN TOUCH
         </p>
@@ -37,7 +40,7 @@ const Contact: React.FC = () => {
         <h2
           data-aos="fade-up"
           data-aos-delay="100"
-          className="text-4xl md:text-5xl font-bold text-gray-800"
+          className="text-4xl md:text-5xl font-bold"
         >
           Let’s Work Together
         </h2>
@@ -45,7 +48,7 @@ const Contact: React.FC = () => {
         <p
           data-aos="fade-up"
           data-aos-delay="200"
-          className="text-gray-500 mt-4 max-w-xl mx-auto"
+          className="text-slate-400 mt-4 max-w-xl mx-auto"
         >
           Feel free to reach out for opportunities, collaborations, or just a quick hello.
         </p>
@@ -58,12 +61,12 @@ const Contact: React.FC = () => {
               href={method.href}
               data-aos="fade-up"
               data-aos-delay={idx * 150}
-              className="flex items-center justify-center gap-4 p-5 bg-gray-100 rounded-2xl hover:shadow-lg transition-all group"
+              className="flex items-center justify-center gap-4 p-5 bg-slate-800 border border-slate-700 rounded-2xl hover:border-slate-500 hover:scale-[1.02] transition-all group"
             >
               <div className="text-2xl">{method.icon}</div>
               <div>
-                <p className="text-sm text-gray-500">{method.label}</p>
-                <p className="text-gray-800 font-medium group-hover:text-purple-600 transition">
+                <p className="text-sm text-slate-400">{method.label}</p>
+                <p className="text-slate-200 font-medium group-hover:text-blue-400 transition">
                   {method.value}
                 </p>
               </div>
@@ -77,13 +80,13 @@ const Contact: React.FC = () => {
           data-aos-delay="400"
           className="mt-10 flex justify-center gap-4"
         >
-          <a className="w-10 h-10 flex items-center justify-center bg-gray-800 text-white rounded-full hover:bg-purple-600 transition">
+          <a className="w-10 h-10 flex items-center justify-center bg-slate-800 border border-slate-700 rounded-full hover:bg-slate-700 hover:border-slate-500 transition">
             𝕏
           </a>
-          <a className="w-10 h-10 flex items-center justify-center bg-gray-800 text-white rounded-full hover:bg-purple-600 transition">
+          <a className="w-10 h-10 flex items-center justify-center bg-slate-800 border border-slate-700 rounded-full hover:bg-slate-700 hover:border-slate-500 transition">
             in
           </a>
-          <a className="w-10 h-10 flex items-center justify-center bg-gray-800 text-white rounded-full hover:bg-purple-600 transition">
+          <a className="w-10 h-10 flex items-center justify-center bg-slate-800 border border-slate-700 rounded-full hover:bg-slate-700 hover:border-slate-500 transition">
             🐙
           </a>
         </div>

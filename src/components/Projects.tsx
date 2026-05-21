@@ -4,7 +4,6 @@ type Project = {
   title: string;
   category: string;
   image: string;
-  gradient: string;
   description: string;
   stack: string[];
   features: string[];
@@ -17,7 +16,6 @@ const PROJECTS: Project[] = [
     title: "Gold Shop ERP System",
     category: "Full Stack | Enterprise",
     image: "🏪",
-    gradient: "from-amber-500 to-orange-600",
     description:
       "Built a full ERP system for a gold shop to manage inventory, sales, pawn, and financial workflows. Improved business efficiency and data tracking.",
     stack: ["Spring Boot", "Angular", "MySQL", "REST API"],
@@ -29,7 +27,6 @@ const PROJECTS: Project[] = [
     title: "Travel Guide Platform",
     category: "Full Stack | Tourism",
     image: "✈️",
-    gradient: "from-sky-500 to-blue-600",
     description:
       "Developed a travel platform with search, booking, and user reviews. Focused on user experience and scalable backend APIs.",
     stack: ["Spring Boot", "React", "MongoDB"],
@@ -41,7 +38,6 @@ const PROJECTS: Project[] = [
     title: "Library Management System",
     category: "Desktop Application",
     image: "📚",
-    gradient: "from-emerald-500 to-teal-600",
     description:
       "Created a desktop system to manage books, members, and borrowing process with automated fine calculation.",
     stack: ["VB.NET", "SQL Server"],
@@ -53,7 +49,6 @@ const PROJECTS: Project[] = [
     title: "Eye Clinic Management",
     category: "Healthcare ERP",
     image: "🏥",
-    gradient: "from-rose-500 to-pink-600",
     description:
       "Built a clinic system to manage patient records, appointments, and reporting, improving daily workflow.",
     stack: ["VB.NET", "SQL Server"],
@@ -65,14 +60,17 @@ const PROJECTS: Project[] = [
 
 const Projects: React.FC = () => {
   return (
-    <section className="py-24 bg-gradient-to-br from-gray-900 to-slate-900" id="projects">
+    <section
+      id="projects"
+      className="py-24 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white"
+    >
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Header */}
         <div className="text-center mb-16">
           <p
             data-aos="fade-up"
-            className="text-purple-400 font-semibold mb-2 tracking-wider"
+            className="text-slate-400 font-semibold mb-2 tracking-wider"
           >
             MY WORK
           </p>
@@ -80,7 +78,7 @@ const Projects: React.FC = () => {
           <h2
             data-aos="fade-up"
             data-aos-delay="100"
-            className="text-4xl md:text-5xl font-bold text-white"
+            className="text-4xl md:text-5xl font-bold"
           >
             Featured Projects
           </h2>
@@ -88,13 +86,13 @@ const Projects: React.FC = () => {
           <div
             data-aos="fade-up"
             data-aos-delay="200"
-            className="w-24 h-1 bg-gradient-to-r from-purple-500 to-indigo-600 mx-auto mt-4 rounded-full"
+            className="w-24 h-[2px] bg-slate-600 mx-auto mt-4 rounded-full"
           ></div>
 
           <p
             data-aos="fade-up"
             data-aos-delay="300"
-            className="text-gray-400 mt-4 max-w-2xl mx-auto"
+            className="text-slate-400 mt-4 max-w-2xl mx-auto"
           >
             Real-world projects demonstrating my ability to build scalable systems and solve business problems.
           </p>
@@ -107,13 +105,13 @@ const Projects: React.FC = () => {
               key={idx}
               data-aos="fade-up"
               data-aos-delay={idx * 150}
-              className="group bg-white/10 backdrop-blur-md rounded-2xl overflow-hidden hover:scale-[1.03] transition-all duration-500 hover:shadow-xl"
+              className="bg-slate-800 border border-slate-700 rounded-2xl overflow-hidden hover:border-slate-500 hover:scale-[1.02] transition-all duration-300"
             >
               {/* Top */}
-              <div className={`h-48 bg-gradient-to-br ${project.gradient} flex items-center justify-center text-7xl relative`}>
+              <div className="h-40 flex items-center justify-center text-6xl bg-slate-700 relative">
                 {project.image}
 
-                <div className="absolute top-4 right-4 bg-black/50 px-3 py-1 rounded-full text-xs text-white">
+                <div className="absolute top-3 right-3 bg-slate-900/80 px-3 py-1 rounded-full text-xs text-slate-300 border border-slate-600">
                   {project.duration}
                 </div>
               </div>
@@ -121,19 +119,19 @@ const Projects: React.FC = () => {
               {/* Content */}
               <div className="p-6">
 
-                <span className="text-xs text-purple-400 font-semibold uppercase tracking-wider">
+                <span className="text-xs text-blue-400 font-semibold uppercase tracking-wider">
                   {project.category}
                 </span>
 
-                <h3 className="text-xl font-bold text-white mt-1">
+                <h3 className="text-xl font-semibold text-slate-100 mt-1">
                   {project.title}
                 </h3>
 
-                <p className="text-gray-300 mt-2 text-sm leading-relaxed">
+                <p className="text-slate-400 mt-2 text-sm leading-relaxed">
                   {project.description}
                 </p>
 
-                <p className="text-gray-400 text-xs mt-2">
+                <p className="text-slate-500 text-xs mt-2">
                   🏢 {project.company}
                 </p>
 
@@ -142,7 +140,7 @@ const Projects: React.FC = () => {
                   {project.stack.map((tech, i) => (
                     <span
                       key={i}
-                      className="px-2 py-1 bg-white/20 rounded text-xs text-gray-200"
+                      className="px-2 py-1 bg-slate-700 border border-slate-600 rounded text-xs text-slate-300"
                     >
                       {tech}
                     </span>
@@ -152,7 +150,7 @@ const Projects: React.FC = () => {
                 {/* Features */}
                 <div className="flex flex-wrap gap-2 mt-3">
                   {project.features.map((f, i) => (
-                    <span key={i} className="text-xs text-purple-300">
+                    <span key={i} className="text-xs text-slate-400">
                       • {f}
                     </span>
                   ))}
@@ -162,6 +160,7 @@ const Projects: React.FC = () => {
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );
