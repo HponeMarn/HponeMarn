@@ -1,12 +1,14 @@
 import React from 'react';
+import { FaGithub } from 'react-icons/fa';
+import { HiOutlineMail } from 'react-icons/hi';
 
 const Contact: React.FC = () => {
   const contactMethods = [
     {
       icon: "📧",
       label: "Email",
-      value: "phmam187@gmail.com",
-      href: "mailto:phmam187@gmail.com",
+      value: "phmarn187@gmail.com",
+      href: "mailto:phmarn187@gmail.com",
     },
     {
       icon: "📞",
@@ -80,17 +82,16 @@ const Contact: React.FC = () => {
           data-aos-delay="400"
           className="mt-10 flex justify-center gap-4"
         >
-          <a className="w-10 h-10 flex items-center justify-center bg-slate-800 border border-slate-700 rounded-full hover:bg-slate-700 hover:border-slate-500 transition">
-            𝕏
+           <a   href="https://www.github.com/HponeMarn" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center bg-slate-800 border border-slate-700 rounded-full hover:bg-slate-700 hover:border-slate-500 transition">
+            <FaGithub className="w-5 h-5" />
           </a>
-          <a className="w-10 h-10 flex items-center justify-center bg-slate-800 border border-slate-700 rounded-full hover:bg-slate-700 hover:border-slate-500 transition">
-            in
+          <a   href="mailto:phmarn187@gmail.com"  target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center bg-slate-800 border border-slate-700 rounded-full hover:bg-slate-700 hover:border-slate-500 transition">
+             <HiOutlineMail className="w-5 h-5 text-gray-400 group-hover:text-white transition" />
           </a>
-          <a className="w-10 h-10 flex items-center justify-center bg-slate-800 border border-slate-700 rounded-full hover:bg-slate-700 hover:border-slate-500 transition">
-            🐙
-          </a>
+          <a   href="https://hpone-marn-7nb4.vercel.app/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center bg-slate-800 border border-slate-700 rounded-full hover:bg-slate-700 hover:border-slate-500 transition">
+            🌐
+          </a>                
         </div>
-
       </div>
     </section>
   );

@@ -9,6 +9,14 @@ type ExperienceItem = {
 };
 
 const EXPERIENCES: ExperienceItem[] = [
+    {
+    year: "2025 - Present",
+    title: "Full Stack Developer",
+    company: "MIT Company",
+    description:
+      "Built a gold shop ERP web application using Spring Boot and Angular. Designed scalable business logic for inventory, sales, pawn, and financial workflows. Developed REST APIs and optimized database performance.",
+    tags: ["Java", "Spring MVC", "Angular", "SSMS"],
+  },
   {
     year: "2024 - 2025",
     title: "Junior Developer (Freelance)",
@@ -16,14 +24,6 @@ const EXPERIENCES: ExperienceItem[] = [
     description:
       "Developed a clinic ERP system using VB.NET and SQL Server, managing patient records and generating reports. Improved daily workflow efficiency and trained staff for system usage.",
     tags: ["VB.NET", "SQL Server", "Mini ERP"],
-  },
-  {
-    year: "2025 - Present",
-    title: "Full Stack Developer",
-    company: "MIT Company",
-    description:
-      "Built a gold shop ERP web application using Spring Boot and Angular. Designed scalable business logic for inventory, sales, pawn, and financial workflows. Developed REST APIs and optimized database performance.",
-    tags: ["Java", "Spring MVC", "Angular", "SSMS"],
   },
 ];
 
