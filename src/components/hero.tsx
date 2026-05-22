@@ -88,7 +88,7 @@ const Hero: React.FC = () => {
                 target="_blank"
                 className="px-8 py-3.5 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-500 hover:to-cyan-500 text-white rounded-xl font-semibold transition-all duration-300 shadow-[0_4px_20px_rgba(6,182,212,0.25)] hover:shadow-[0_4px_30px_rgba(6,182,212,0.45)] hover:-translate-y-0.5"
               >
-                Download Resume →
+                Download CV →
               </a>
               <button
                 onClick={handleContact}
