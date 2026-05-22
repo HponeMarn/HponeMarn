@@ -170,7 +170,7 @@ const Hero: React.FC = () => {
                 
                 <div className="relative w-full h-full rounded-[21px] overflow-hidden bg-gradient-to-br from-slate-900 to-slate-950">
                   <img
-                    src="photo_2026-05-22_20-03-57.jpg"
+                    src="photo_2026-05-22_20-20-44.jpg"
                     alt="Hpone Marn"
                     className="w-full h-full object-cover object-top scale-105 group-hover:scale-110 transition-all duration-700 ease-out"
                   />
