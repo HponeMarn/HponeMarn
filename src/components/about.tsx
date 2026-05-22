@@ -85,17 +85,17 @@ const About: React.FC = () => {
               className="flex gap-4"
             >
               <a
-                href="#projects"
+                href="#experience"
                 className="px-6 py-2 bg-slate-700 hover:bg-slate-600 rounded-lg transition"
               >
-                View Projects
+                View Experience
               </a>
 
               <a
-                href="#contact"
+                href="#projects"
                 className="px-6 py-2 border border-slate-500 rounded-lg hover:bg-slate-700/40 transition"
               >
-                Contact Me
+                View Projects
               </a>
             </div>
           </div>

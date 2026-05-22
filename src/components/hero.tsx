@@ -84,10 +84,11 @@ const Hero: React.FC = () => {
 
             <div data-aos="fade-up" data-aos-delay="300" className="flex gap-4 pt-2 flex-wrap justify-center lg:justify-start">
               <a
-                href="#projects"
+                href="RESUME_HPONE_MARN.pdf"
+                target="_blank"
                 className="px-8 py-3.5 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-500 hover:to-cyan-500 text-white rounded-xl font-semibold transition-all duration-300 shadow-[0_4px_20px_rgba(6,182,212,0.25)] hover:shadow-[0_4px_30px_rgba(6,182,212,0.45)] hover:-translate-y-0.5"
               >
-                View Work →
+                Download Resume →
               </a>
               <button
                 onClick={handleContact}
