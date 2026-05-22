@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
           href="#home"
           className="text-2xl font-bold text-white tracking-wide"
         >
-          HPN.
+          H.M. 
         </a>
 
         {/* Desktop Nav */}

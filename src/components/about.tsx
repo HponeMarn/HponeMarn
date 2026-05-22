@@ -8,7 +8,7 @@ type Stat = {
 };
 
 const STATS: Stat[] = [
-  { number: "1+", label: "Years Experience" },
+  { number: "1+", label: "Year Experience" },
   { number: "4+", label: "Projects Delivered" },
   { number: "3", label: "Certifications" },
   { number: "100%", label: "Commitment" },

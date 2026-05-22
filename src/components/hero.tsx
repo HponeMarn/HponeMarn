@@ -170,7 +170,7 @@ const Hero: React.FC = () => {
                 
                 <div className="relative w-full h-full rounded-[21px] overflow-hidden bg-gradient-to-br from-slate-900 to-slate-950">
                   <img
-                    src="photo_2026-05-21_19-40-39.jpg"
+                    src="photo_2026-05-22_20-03-57.jpg"
                     alt="Hpone Marn"
                     className="w-full h-full object-cover object-top scale-105 group-hover:scale-110 transition-all duration-700 ease-out"
                   />
@@ -180,7 +180,7 @@ const Hero: React.FC = () => {
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-500/0 to-blue-500/5"></div>
 
                   {/* Enhanced Location Badge */}
-                  <div className="absolute bottom-4 left-4 right-4 bg-slate-950/90 backdrop-blur-xl border border-slate-700/80 px-4 py-3 rounded-xl flex justify-between items-center shadow-2xl hover:border-cyan-500/50 transition-all duration-300">
+                  {/* <div className="absolute bottom-4 left-4 right-4 bg-slate-950/90 backdrop-blur-xl border border-slate-700/80 px-4 py-3 rounded-xl flex justify-between items-center shadow-2xl hover:border-cyan-500/50 transition-all duration-300">
                     <div>
                       <p className="text-[9px] uppercase tracking-widest text-slate-400 font-bold">📍 Location</p>
                       <p className="text-xs sm:text-sm font-black text-white tracking-wide">Yangon, Myanmar</p>
@@ -194,12 +194,12 @@ const Hero: React.FC = () => {
                       </div>
                       <span className="text-[10px] text-cyan-400 font-mono hidden sm:inline">ACTIVE</span>
                     </div>
-                  </div>
+                  </div> */}
 
                   {/* Status badge on top */}
-                  <div className="absolute top-4 right-4 bg-emerald-500/20 backdrop-blur-md border border-emerald-500/40 px-2 py-1 rounded-lg">
+                  {/* <div className="absolute top-4 right-4 bg-emerald-500/20 backdrop-blur-md border border-emerald-500/40 px-2 py-1 rounded-lg">
                     <span className="text-[8px] text-emerald-300 font-mono tracking-wider">● AVAILABLE</span>
-                  </div>
+                  </div> */}
                 </div>
               </div>
 

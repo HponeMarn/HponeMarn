@@ -21,7 +21,7 @@ const PROJECTS: Project[] = [
     stack: ["Spring Boot", "Angular", "MySQL", "REST API"],
     features: ["Inventory tracking", "Pawn system", "Gold saving", "Audit logs"],
     company: "MIT Company",
-    duration: "7 months",
+    duration: "1 year",
   },
   {
     title: "Travel Guide Platform",

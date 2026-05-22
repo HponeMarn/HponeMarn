@@ -15,7 +15,7 @@ const EDUCATIONS: EducationItem[] = [
   {
     institution: "Youth Resource College",
     degree: "Diploma in Computing",
-    period: "2024",
+    period: "2025",
   },
   {
     institution: "Youth Resource College",
@@ -23,8 +23,8 @@ const EDUCATIONS: EducationItem[] = [
     period: "2025",
   },
   {
-    institution: "One Stop Bootcamp",
-    degree: "Java Developer Certificate (JDC)",
+    institution: "One Stop Bootcamp - 13",
+    degree: "Java Developer Class (JDC)",
     period: "2025",
   },
 ];
