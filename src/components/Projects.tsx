@@ -13,11 +13,11 @@ type Project = {
 
 const PROJECTS: Project[] = [
   {
-    title: "Gold Shop ERP System",
+    title: "Gold and Jewelry Shop ERP System",
     category: "Full Stack | Enterprise",
     image: "🏪",
     description:
-      "Built a full ERP system for a gold shop to manage inventory, sales, pawn, and financial workflows. Improved business efficiency and data tracking.",
+      "Built a full ERP system for a gold and jewelry shop to manage inventory, sales, pawn, and financial workflows. Improved business efficiency and data tracking.",
     stack: ["Spring Boot", "Angular", "MySQL", "REST API"],
     features: ["Inventory tracking", "Pawn system", "Gold saving", "Audit logs"],
     company: "MIT Company",

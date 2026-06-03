@@ -66,7 +66,7 @@ const About: React.FC = () => {
               data-aos-delay="300"
               className="text-slate-400 mb-4 leading-relaxed"
             >
-              At MIT Company, I developed a full-featured Gold Shop ERP system handling 
+              At MIT Company, I developed a full-featured Gold and Jewelry Shop ERP system handling 
               inventory, sales, purchase, gold saving, pawn, and audit workflows.
             </p>
 
