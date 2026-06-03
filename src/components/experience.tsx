@@ -14,7 +14,7 @@ const EXPERIENCES: ExperienceItem[] = [
     title: "Full Stack Developer",
     company: "MIT Company",
     description:
-      "Built a gold shop ERP web application using Spring Boot and Angular. Designed scalable business logic for inventory, sales, pawn, and financial workflows. Developed REST APIs and optimized database performance.",
+      "Built a gold and jewelry shop ERP web application using Spring MVC and Angular. Designed scalable business logic for inventory, sales, pawn, and financial workflows. Developed REST APIs and optimized database performance.",
     tags: ["Java", "Spring MVC", "Angular", "SSMS"],
   },
   {
