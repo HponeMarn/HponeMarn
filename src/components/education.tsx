@@ -15,7 +15,7 @@ const EDUCATIONS: EducationItem[] = [
   {
     institution: "Youth Resource College",
     degree: "Diploma in Computing",
-    period: "2025",
+    period: "2024",
   },
   {
     institution: "Youth Resource College",

@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 
 const Contact: React.FC = () => {
@@ -85,12 +85,13 @@ const Contact: React.FC = () => {
            <a   href="https://www.github.com/HponeMarn" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center bg-slate-800 border border-slate-700 rounded-full hover:bg-slate-700 hover:border-slate-500 transition">
             <FaGithub className="w-5 h-5" />
           </a>
+          <a   href="https://www.linkedin.com/in/hpone-marn-964a3b38a/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center bg-slate-800 border border-slate-700 rounded-full hover:bg-slate-700 hover:border-slate-500 transition">
+             <FaLinkedin className="w-5 h-5" />
+          </a>
           <a   href="mailto:phmarn187@gmail.com"  target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center bg-slate-800 border border-slate-700 rounded-full hover:bg-slate-700 hover:border-slate-500 transition">
              <HiOutlineMail className="w-5 h-5 text-gray-400 group-hover:text-white transition" />
           </a>
-          <a   href="https://hpone-marn-7nb4.vercel.app/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center bg-slate-800 border border-slate-700 rounded-full hover:bg-slate-700 hover:border-slate-500 transition">
-            🌐
-          </a>                
+                          
         </div>
       </div>
     </section>
